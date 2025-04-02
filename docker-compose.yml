@@ -12,6 +12,6 @@ services:
     networks:
       - microservice_network
 networks:
-  rabbitmq_go_net:
+  microservice_network:
     name: microservice_network
     driver: bridge
