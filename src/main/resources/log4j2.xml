@@ -15,8 +15,8 @@
         </Console>
 
         <!-- File Appenders on need basis -->
-        <RollingFile name="frameworkLog" fileName="${APP_LOG_ROOT}/app-framework.log"
-                     filePattern="${APP_LOG_ROOT}/app-framework-%d{yyyy-MM-dd}-%i.log">
+        <RollingFile name="frameworkLog" fileName="${APP_LOG_ROOT}/app-discovery.log"
+                     filePattern="${APP_LOG_ROOT}/app-discovery-%d{yyyy-MM-dd}-%i.log">
             <LevelRangeFilter minLevel="ERROR" maxLevel="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
             <PatternLayout pattern="${LOG_PATTERN}"/>
             <Policies>
