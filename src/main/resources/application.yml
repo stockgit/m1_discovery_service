@@ -3,6 +3,9 @@ spring:
     import: "optional:configserver:http://config-service:8088"
     activate:
       on-profile: docker
+    discovery:
+      enabled: true
+      service-id: config-service
 ---
 spring:
   application:
