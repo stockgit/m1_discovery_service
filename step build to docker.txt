@@ -1,0 +1,20 @@
+Step 1: Create Two Spring Boot Projects
+
+Step 2: Set Up discovery-service
+
+Step 4: Build Docker Images
+
+open cmd and goto project path
+D:\NewExample\Spring Microservice Example\mewv2 microservice\discovery-service
+
+For employee-service:
+    mvn clean package
+    docker build -t discovery-service .
+
+Step 5: Create a Docker Network
+    docker network create microservices-net
+
+Step 6: Run the Microservices
+    docker run -e "SPRING_PROFILES_ACTIVE=docker" -d --net microservices-net --name discovery-service -p 8061:8061 discovery-service
+
+Step 7: Test the Microservices
