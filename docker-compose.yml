@@ -1,6 +1,5 @@
-version: '3.8'
 services:
-  api-demo:
+  discovery-service:
     build:
       context: ./
       dockerfile: Dockerfile
