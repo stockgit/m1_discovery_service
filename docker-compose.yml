@@ -9,3 +9,9 @@ services:
       - 8061:8061
     environment:
       SPRING_PROFILES_ACTIVE: docker
+    networks:
+      - microservice_network
+networks:
+  rabbitmq_go_net:
+    name: microservice_network
+    driver: bridge
