@@ -9,7 +9,7 @@ spring:
     name: discovery-service
   cloud:
     config:
-      uri: http://config-server:8888
+      uri: http://config-server:8088
   profiles:
     active: docker
 management:
